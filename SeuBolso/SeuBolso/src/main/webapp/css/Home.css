@@ -1,0 +1,312 @@
+/* ========================= WELCOME CARD ========================= */
+.welcome-card {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.welcome-text h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.welcome-text strong {
+    color: #f8f9fa;
+    font-weight: 700;
+}
+
+.welcome-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.fa-hand-wave {
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+}
+
+/* ========================= HISTÓRICO DE LANÇAMENTOS ========================= */
+.historico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.historico-header h2 {
+    margin-bottom: 0;
+}
+
+.btn-add-small {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-add-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(26, 77, 46, 0.3);
+    color: white;
+}
+
+.lancamentos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lancamento-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.lancamento-item:hover {
+    transform: translateX(5px);
+    border-color: #1a4d2e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lancamento-item.receita {
+    border-left: 4px solid #27ae60;
+}
+
+.lancamento-item.despesa {
+    border-left: 4px solid #e74c3c;
+}
+
+.lancamento-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.lancamento-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.lancamento-item.receita .lancamento-icon {
+    background: rgba(39, 174, 96, 0.1);
+    color: #27ae60;
+}
+
+.lancamento-item.despesa .lancamento-icon {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.lancamento-titulo {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.lancamento-categoria {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.lancamento-valor {
+    font-size: 1.3rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.lancamento-valor.receita {
+    color: #27ae60;
+}
+
+.lancamento-valor.despesa {
+    color: #e74c3c;
+}
+
+/* ========================= AÇÕES RÁPIDAS ========================= */
+.acoes-rapidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.acao-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.acao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1a4d2e;
+}
+
+.acao-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+}
+
+.acao-icon.receitas {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+}
+
+.acao-icon.desejos {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+}
+
+.acao-icon.perfil {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+}
+
+.acao-card h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.acao-card p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ========================= SCROLL TO TOP BUTTON ========================= */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26, 77, 46, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(26, 77, 46, 0.4);
+}
+
+.scroll-top-btn.show {
+    display: flex;
+}
+
+
+
+/* ========================= AJUSTES PARA FOOTER ========================= */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+/* Remove margens extras que podem causar problemas */
+.section-latest:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================= RESPONSIVIDADE ========================= */
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .historico-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .historico-header h2 {
+        text-align: center;
+    }
+
+    .lancamento-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .lancamento-valor {
+        align-self: flex-end;
+    }
+
+    .acoes-rapidas {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+    
+}

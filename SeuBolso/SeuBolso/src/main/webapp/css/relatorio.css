@@ -1,0 +1,492 @@
+/* ===============================
+   RELATÓRIO - ESTILOS PRINCIPAIS
+   =============================== */
+
+.relatorio-main {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-color: #f7f2e1;
+}
+
+.conteudo {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.conteudo h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.conteudo h3 {
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* ===============================
+   FILTROS - CENTRALIZADOS
+   =============================== */
+
+.filter-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.filter-field {
+    display: inline-block;
+    margin: 0 10px 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.filter-field label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.filter-field input,
+.filter-field select {
+    width: 180px;
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+.filter-field input:focus,
+.filter-field select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.filter-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-actions button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #229954;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+/* ===============================
+   CARDS DE RESUMO
+   =============================== */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card .card-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.summary-card.receitas {
+    border-left: 4px solid #27ae60;
+}
+
+.summary-card.despesas {
+    border-left: 4px solid #e74c3c;
+}
+
+.summary-card.saldo.positivo {
+    border-left: 4px solid #3498db;
+}
+
+.summary-card.saldo.negativo {
+    border-left: 4px solid #e67e22;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 0.3rem;
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* ===============================
+   GRID PARA GRÁFICO E HISTÓRICO
+   =============================== */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* ===============================
+   GRÁFICO
+   =============================== */
+
+.chart-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============================
+   HISTÓRICO
+   =============================== */
+
+.history-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-container h3 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.history-list {
+    overflow-x: auto;
+}
+
+.history-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+#report-history {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+    align-items: center;
+}
+
+.history-item:hover {
+    background-color: #f8f9fa;
+}
+
+.history-item.receita {
+    border-left: 3px solid #27ae60;
+}
+
+.history-item.despesa {
+    border-left: 3px solid #e74c3c;
+}
+
+.history-item .valor {
+    font-weight: 600;
+}
+
+/* ===============================
+   BOTÕES DE AÇÃO
+   =============================== */
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.btn-icon {
+    background: transparent;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    color: #6b7280;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.btn-icon:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-icon.btn-delete:hover {
+    background: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+.btn-icon.btn-edit:hover {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+/* ===============================
+   BADGES
+   =============================== */
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.badge-receita {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-despesa {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ===============================
+   MENSAGENS DE ESTADO
+   =============================== */
+
+.no-data,
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.loading {
+    color: #3498db;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+/* ===============================
+   SCROLLBAR CUSTOMIZADA
+   =============================== */
+
+#report-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+#report-history::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#report-history::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+
+#report-history::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+   =============================== */
+
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-wrapper {
+        height: 250px;
+    }
+    
+    .history-columns,
+    .history-item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-box {
+        padding: 1rem;
+    }
+    
+    .filter-field {
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 300px;
+    }
+    
+    .filter-field input,
+    .filter-field select {
+        width: 100%;
+    }
+    
+    .filter-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-actions button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .history-columns {
+        display: none;
+    }
+    
+    .history-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    
+    .history-item > div:before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #7f8c8d;
+        font-size: 0.85rem;
+    }
+    
+    .action-buttons {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid #eee;
+    }
+}
+
+@media (max-width: 480px) {
+    .relatorio-main {
+        padding: 1rem 0.5rem;
+    }
+    
+    .conteudo h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card-value {
+        font-size: 1.4rem;
+    }
+    
+    .chart-container,
+    .history-container {
+        padding: 1rem;
+    }
+    
+    .filter-box {
+        padding: 1rem;
+    }
+}

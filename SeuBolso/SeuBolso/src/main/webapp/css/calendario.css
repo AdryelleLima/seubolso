@@ -1,0 +1,91 @@
+/* Estilos para o calendário */
+.conteudo {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 🛑 REGRAS CRUCIAIS PARA O CONTROLE DE COR POR JAVASCRIPT */
+.fc-event,
+.fc-event.fc-h-event,
+.fc-event.fc-daygrid-event,
+.fc-daygrid-event.fc-event {
+    /* Mantenha o estilo estrutural (borda, sombra, etc.) */
+    border: none !important; /* Remove bordas padrão do FullCalendar */
+    cursor: default;
+    opacity: 1; 
+    filter: none; 
+    
+    /* Adicionando estilos de texto e forma que você tinha antes */
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 6px 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    
+    /* ✅ SOLUÇÃO DO CONFLITO: Anula qualquer background genérico (como o gradiente verde do main.css) */
+    background: none !important; 
+}
+
+/* Garante que o texto herde a cor definida pelo JS (branco) */
+.fc-event-main,
+.fc-event-main-frame,
+.fc-event-title,
+.fc-event-time {
+    color: inherit !important; 
+}
+
+.fc-daygrid-event-dot {
+    display: none; 
+}
+
+/* --- */
+
+/* Legenda do calendário */
+.legenda-calendario {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.legenda-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.legenda-item span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        padding: 10px;
+    }
+
+    #calendar {
+        padding: 10px;
+    }
+
+    .legenda-item {
+        display: block;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,113 @@
+/* === Scrollbar customizada para a lista de notificações === */
+#notificacao-lista::-webkit-scrollbar {
+  width: 8px;
+}
+
+#notificacao-lista::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+#notificacao-lista::-webkit-scrollbar-thumb {
+  background: #1a4d2e;
+  border-radius: 4px;
+}
+
+#notificacao-lista::-webkit-scrollbar-thumb:hover {
+  background: #2d6a4f;
+}
+
+/* === Padroniza altura dos ícones e perfil na barra direita === */
+.barra-direita {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Ícones (notificação e engrenagem) */
+.barra-direita a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+/* Ícone 🔔 e ⚙️ */
+.barra-direita a span {
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+/* Foto de perfil */
+.barra-direita #configuracao-btn div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #1a4d2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+/* Badge de notificação */
+#notificacao-badge {
+  top: 2px;
+  right: 2px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* === LOGO E TEXTO === */
+.barra-esquerda {
+  display: flex;
+  align-items: center;
+}
+
+.barra-esquerda a.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* mantém branco como sua navbar */
+}
+
+/* Imagem da logo */
+.barra-esquerda .marca {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* Texto "SeuBolso" */
+.barra-esquerda .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Nenhum hover para logo/texto */
+.barra-esquerda a.logo-link:hover,
+.barra-esquerda a.logo-link:focus,
+.barra-esquerda .logo:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+/* Hover no botão fechar */
+#fechar-popover-notificacao:hover {
+  background: linear-gradient(135deg, #2d6a4f 0%, #1a4d2e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(26, 77, 46, 0.3);
+}
+
+/* Animação do badge */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

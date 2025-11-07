@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="SeuBolso/src/main/java"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/jakarta.servlet-api-5.0.0.jar"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="SeuBolso/src/main/webapp/WEB-INF/lib/mysql-connector-j-9.3.0.jar"/>
+	<classpathentry kind="output" path="SeuBolso/build/classes"/>
+</classpath>
