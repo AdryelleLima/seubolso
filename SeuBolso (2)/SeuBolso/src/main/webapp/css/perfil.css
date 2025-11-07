@@ -1,0 +1,526 @@
+/* ========================= CONTAINER PRINCIPAL ========================= */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ========================= SEÇÕES COM FUNDO BRANCO ========================= */
+.section-form,
+.section-latest {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-latest h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* ========================= PERFIL HEADER ========================= */
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.perfil-avatar-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.perfil-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #1a4d2e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-change-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1a4d2e;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-change-photo:hover {
+    background: #2d6a4f;
+    transform: scale(1.1);
+}
+
+.perfil-info {
+    flex: 1;
+}
+
+.perfil-nome-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-nome-group h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.perfil-email {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-edit-inline {
+    background: transparent;
+    border: none;
+    color: #1a4d2e;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+.btn-edit-inline:hover {
+    background: rgba(26, 77, 46, 0.1);
+    color: #2d6a4f;
+    transform: scale(1.1);
+}
+
+/* ========================= OBJETIVOS FINANCEIROS ========================= */
+.objetivos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.objetivo-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.objetivo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1a4d2e;
+}
+
+.objetivo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.objetivo-header > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.objetivo-icon {
+    color: #1a4d2e;
+    font-size: 1.5rem;
+}
+
+.objetivo-header h4 {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.objetivo-valor {
+    color: #1a4d2e;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.objetivo-valor.guardado {
+    color: #2d6a4f;
+}
+
+/* ========================= PROGRESSO ========================= */
+.progress-objetivo-container {
+    margin-top: 2rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.progress-percentage {
+    color: #1a4d2e;
+    font-size: 1.1rem;
+}
+
+.progress {
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #1a4d2e 0%, #2d6a4f 100%);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* ========================= RESUMO FINANCEIRO - NOVO LAYOUT ========================= */
+.resumo-financeiro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.resumo-cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resumo-card {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 4px 12px rgba(26, 77, 46, 0.3);
+    transition: all 0.3s ease;
+}
+
+.resumo-card.receitas {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+}
+
+.resumo-card.despesas {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.resumo-card.saldo {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.resumo-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.resumo-icon i {
+    font-size: 1.8rem;
+}
+
+.resumo-info {
+    flex: 1;
+}
+
+.resumo-info h4 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.resumo-valor {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ========================= GRÁFICO ========================= */
+.grafico-container {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.grafico-container h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.grafico-container canvas {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+/* ========================= LISTA DE DESEJOS ========================= */
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.wishlist-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1a4d2e;
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 77, 46, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-title a {
+    color: #1a4d2e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+    color: #2d6a4f;
+}
+
+.card-value {
+    color: #1a4d2e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.progress-container {
+    margin-top: 1rem;
+}
+
+.progress-container .progress {
+    height: 20px;
+}
+
+/* ========================= EMPTY STATE ========================= */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #7f8c8d;
+}
+
+.empty-state i {
+    color: #bdc3c7;
+    margin-bottom: 1rem;
+}
+
+.empty-state h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state a {
+    color: #1a4d2e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.empty-state a:hover {
+    color: #2d6a4f;
+    text-decoration: underline;
+}
+
+/* ========================= BOTÕES ========================= */
+.btn-add {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(26, 77, 46, 0.3);
+    color: white;
+}
+
+/* ========================= RESPONSIVIDADE ========================= */
+@media (max-width: 768px) {
+    .resumo-financeiro-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfil-nome-group {
+        justify-content: center;
+    }
+    
+    .objetivos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wishlist-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================= MODAIS ========================= */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    padding: 1.5rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.modal-footer .btn-primary {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1a4d2e 100%);
+}
+
+/* ========================= TOAST ========================= */
+.toast {
+    border-radius: 8px;
+}
+
+.toast .toast-body {
+    padding: 1rem;
+}

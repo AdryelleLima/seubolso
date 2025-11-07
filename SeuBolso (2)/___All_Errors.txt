@@ -1,0 +1,5 @@
+CorrelationId: 9d417661-6937-4071-b61c-d91b4d20a3e6
+UTC DateTime: 11/07/2025 11:43:53
+
+The following file/folder has not been downloaded
+0. SeuBolso/src/main/webapp/css/pagina-inicial.css
